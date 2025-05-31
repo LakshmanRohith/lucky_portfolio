@@ -28,7 +28,7 @@ const Header = () => {
     }`}>
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold gradient-text">JD</div>
+          <div className="text-2xl font-bold gradient-text">SLR</div>
           
           {/* Desktop Menu */}
           <nav className="hidden md:flex items-center space-x-8">
@@ -41,13 +41,13 @@ const Header = () => {
 
           {/* Social Links */}
           <div className="hidden md:flex items-center space-x-4">
-            <a href="https://github.com/johndoe" className="hover:text-primary transition-colors">
+            <a href="https://github.com/LakshmanRohith" className="hover:text-primary transition-colors">
               <Github className="w-5 h-5" />
             </a>
-            <a href="https://linkedin.com/in/johndoe" className="hover:text-primary transition-colors">
+            <a href="https://www.linkedin.com/in/lakshman-rohith-sanagapalli/" className="hover:text-primary transition-colors">
               <Linkedin className="w-5 h-5" />
             </a>
-            <a href="mailto:john@example.com" className="hover:text-primary transition-colors">
+            <a href="mailto:lakshmansanagapalli@gmail.com" className="hover:text-primary transition-colors">
               <Mail className="w-5 h-5" />
             </a>
           </div>

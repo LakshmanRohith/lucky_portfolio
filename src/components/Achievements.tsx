@@ -6,30 +6,32 @@ const Achievements = () => {
   const achievements = [
     {
       icon: <Trophy className="w-8 h-8" />,
-      title: "1st Place in National Hackathon",
-      description: "Won the grand prize at TechCrunch Disrupt for innovative AI solution"
+      title: "Published 2 Research Papers on IEEE access through top NIT collaboration",
+      description: "Contributed to the field of AI with innovative research on neural networks. In Medical Imaging and AI-driven solutions and automation."
+      
     },
     {
       icon: <Star className="w-8 h-8" />,
-      title: "Featured in Tech Magazine", 
-      description: "Article published about modern web development best practices"
+      title: "President of Pennify Chapter VIT-AP", 
+      description: "Led the Pennify chapter at VIT-AP, organizing workshops and events to promote AI and software development skills among students."
     },
     {
       icon: <Users className="w-8 h-8" />,
-      title: "Open Source Contributor",
-      description: "Contributed to major open source projects with 500+ commits"
+      title: "Instructor at Primo Grad",
+      description: "Taught over 100+ students in AI and software development, helping them build a strong foundation in these fields."
+      
     },
     {
       icon: <Code className="w-8 h-8" />,
       title: "Speaker at Tech Conferences",
-      description: "Delivered talks at multiple conferences about React and Node.js"
+      description: "Delivered talks at multiple conferences about AI AUTOMATION and Generative AI, sharing insights on the latest trends and technologies."
     }
   ];
 
   const stats = [
-    { number: "5+", label: "Years Experience" },
+    { number: "1+", label: "Years Experience" },
     { number: "20+", label: "Projects Completed" },
-    { number: "15+", label: "Happy Clients" }
+    { number: "5+", label: "Happy Clients" }
   ];
 
   return (

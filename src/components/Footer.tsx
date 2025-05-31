@@ -8,18 +8,18 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <div className="text-2xl font-bold gradient-text mb-4">John Doe</div>
+            <div className="text-2xl font-bold gradient-text mb-4">Lakshman Rohith</div>
             <p className="text-muted-foreground mb-4">
-              Full Stack Developer passionate about creating innovative web solutions.
+              AI Automation & Full Stack Developer passionate about creating innovative web solutions using AI.
             </p>
             <div className="flex space-x-4">
-              <a href="https://github.com/johndoe" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://github.com/LakshmanRohith" className="text-muted-foreground hover:text-primary transition-colors">
                 <Github className="w-5 h-5" />
               </a>
-              <a href="https://linkedin.com/in/johndoe" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://www.linkedin.com/in/lakshman-rohith-sanagapalli/" className="text-muted-foreground hover:text-primary transition-colors">
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="mailto:john@example.com" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="mailto:lakshmansanagapalli@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
                 <Mail className="w-5 h-5" />
               </a>
             </div>
@@ -39,16 +39,16 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold mb-4">Contact Info</h3>
             <ul className="space-y-2 text-muted-foreground">
-              <li>john.doe@example.com</li>
-              <li>+1 (555) 123-4567</li>
-              <li>San Francisco, CA</li>
+              <li>lakshmansanagapalli@gmail.com</li>
+              <li>+91 8309935515</li>
+              <li>Guntur, AP</li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-border mt-8 pt-8 text-center text-muted-foreground">
           <p className="flex items-center justify-center">
-            Made with <Heart className="w-4 h-4 mx-1 text-red-500" /> by John Doe
+            Made with <Heart className="w-4 h-4 mx-1 text-red-500" /> by Lakshman Rohith
           </p>
           <p className="mt-2">© 2024 All rights reserved.</p>
         </div>

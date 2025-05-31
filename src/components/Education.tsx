@@ -6,22 +6,22 @@ import { Card, CardContent } from '@/components/ui/card';
 const Education = () => {
   const education = [
     {
-      degree: "Master of Computer Science",
-      school: "Stanford University",
-      period: "2018 - 2020",
-      description: "Specialized in Machine Learning and Artificial Intelligence. Thesis on Deep Learning applications in computer vision."
+      degree: "Master of Software Engineering",
+      school: "Velllore Institute of Technology",
+      period: "2021 - 2026",
+      description: "Specialized in Software developemnt, Agile, Scrum,Machine Learning and Artificial Intelligence. Thesis on Deep Learning applications in computer vision."
     },
     {
-      degree: "Bachelor of Science in Computer Engineering",
-      school: "Massachusetts Institute of Technology",
-      period: "2014 - 2018",
-      description: "Focus on software engineering and system design. Graduated summa cum laude with a specialization in distributed systems."
+      degree: "Board of Secondary Education",
+      school: "Bashyam Educational Institutions",
+      period: "2019 - 2021",
+      description: "Focus on Maths, Physics, and Chemistry with a strong foundation in problem-solving."
     },
     {
-      degree: "Associate Degree in Web Development",
-      school: "Community College of Denver",
-      period: "2012 - 2014",
-      description: "Foundation in web technologies including HTML, CSS, JavaScript, and database design."
+      degree: "Central Board of Secondary Education",
+      school: "Sri Venkatswara Bala Kuteer",
+      period: "2016 - 2019",
+      description: "Completed  education with a focus on Science and Mathematics, laying the groundwork for future studies in technology."
     }
   ];
 
@@ -29,7 +29,7 @@ const Education = () => {
     <section id="education" className="py-20 bg-card/50">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-fade-up">
-          <h2 className="text-4xl font-bold mb-4 gradient-text">Education</h2>
+          <h1 className="text-4xl font-bold mb-4 gradient-text">Education</h1>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             My academic journey in computer science and software engineering
           </p>

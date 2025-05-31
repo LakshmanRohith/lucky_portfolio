@@ -6,6 +6,10 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
+import emailjs from 'emailjs-com';
+import { SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY } from '@/lib/emailConfig';
+
+
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -15,15 +19,39 @@ const Contact = () => {
     message: ''
   });
   const { toast } = useToast();
-
+  
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+  e.preventDefault();
+
+  emailjs.send(
+    SERVICE_ID,
+    TEMPLATE_ID,
+    {
+      from_name: formData.name,
+      from_email: formData.email,
+      subject: formData.subject,
+      message: formData.message,
+    },
+    PUBLIC_KEY
+  )
+  .then(() => {
     toast({
       title: "Message Sent!",
       description: "Thank you for your message. I'll get back to you soon!",
     });
     setFormData({ name: '', email: '', subject: '', message: '' });
-  };
+  })
+  .catch((error) => {
+    toast({
+      title: "Error",
+      description: "Failed to send the message. Please try again later.",
+      variant: "destructive"
+    });
+    console.error("EmailJS error:", error);
+  });
+};
+
+
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
@@ -48,7 +76,7 @@ const Contact = () => {
               <h3 className="text-2xl font-semibold mb-6">Let's Talk About Your Project</h3>
               <p className="text-muted-foreground mb-8">
                 I'm passionate about creating exceptional digital experiences. 
-                Whether you need a website, web application, or mobile app, 
+                Whether you need a website, web application, or AI driven solution, AI automation 
                 I'd love to help bring your vision to life.
               </p>
             </div>
@@ -60,7 +88,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <div className="font-medium">Email</div>
-                  <div className="text-muted-foreground">john.doe@example.com</div>
+                  <div className="text-muted-foreground">lakshmansanagapalli@gmail.com</div>
                 </div>
               </div>
 
@@ -70,7 +98,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <div className="font-medium">Phone</div>
-                  <div className="text-muted-foreground">+1 (555) 123-4567</div>
+                  <div className="text-muted-foreground">+91 8309935515</div>
                 </div>
               </div>
 
@@ -80,7 +108,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <div className="font-medium">Location</div>
-                  <div className="text-muted-foreground">San Francisco, CA</div>
+                  <div className="text-muted-foreground">Guntur, AP</div>
                 </div>
               </div>
             </div>
@@ -159,6 +187,10 @@ const Contact = () => {
       </div>
     </section>
   );
+
+  
 };
 
 export default Contact;
+
+

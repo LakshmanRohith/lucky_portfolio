@@ -7,32 +7,32 @@ import { Button } from '@/components/ui/button';
 const Certificates = () => {
   const certificates = [
     {
-      title: "AWS Certified Solutions Architect",
-      issuer: "Amazon Web Services",
+      title: "0-100x Full Stack Developer",
+      issuer: "100x devs",
+      date: "2025",
+      image: "/lovable-uploads/images.png",
+      link: "https://app.100xdevs.com/certificate/verify/5CBQRV71"
+    },
+    {
+      title: "Microsoft Certified: Azure Fundamentals",
+      issuer: "Microsoft",
       date: "2023",
-      image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400",
-      link: "https://aws.amazon.com/certification/"
+      image: "/lovable-uploads/microsoft.png",
+      link: "https://www.credly.com/badges/464f3d4d-0151-4ccb-aad9-8d31f63a0840/linked_in_profile"
     },
     {
-      title: "Google Professional Data Engineer",
-      issuer: "Google Cloud",
-      date: "2023",
-      image: "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=400",
-      link: "https://cloud.google.com/certification"
+      title: "Data Science Professional Certificate",
+      issuer: "Great Learning",
+      date: "2024",
+      image: "/lovable-uploads/greatlearning.png",
+      link: "https://www.mygreatlearning.com/certificate/PSNUHFHX"
     },
     {
-      title: "Full Stack Web Development Certification",
-      issuer: "freeCodeCamp",
-      date: "2022",
-      image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400",
-      link: "https://freecodecamp.org"
-    },
-    {
-      title: "Machine Learning Specialization",
-      issuer: "Stanford Online",
-      date: "2022",
-      image: "https://images.unsplash.com/photo-1555255707-c07966088b7b?w=400",
-      link: "https://stanford.edu"
+      title: "Generative AI with Google Cloud",
+      issuer: "Google Cloud Skills Boost",
+      date: "2024",
+      image: "/lovable-uploads/google.png",
+      link: "https://www.cloudskillsboost.google/public_profiles/beb76774-3f5e-4211-b8e8-fdc3e97a5ca0/badges/9467795?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share"
     }
   ];
 
